@@ -19,7 +19,7 @@ class Post extends React.Component {
 
     requeryPost () {
         console.log("Requerying post...");
-        fetch(`/api/posts/${this.props.model.id}/`, {
+        fetch(`https://julias-photo-app.herokuapp.com/api/posts/${this.props.model.id}/`, {
             headers: getHeaders()
         })
         .then(response => response.json())
