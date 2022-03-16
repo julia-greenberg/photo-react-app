@@ -15,7 +15,7 @@ class AddComment extends React.Component {
         const postId = this.props.postId;
         const newComment = document.querySelector(`#addcomment-${postId}`).value;
         if (newComment){
-            fetch(`/api/comments`, {
+            fetch(`https://julias-photo-app.herokuapp.com/api/comments`, {
                 method: "POST",
                 headers: getHeaders(),
                 body: JSON.stringify({"post_id": postId, "text": newComment})
