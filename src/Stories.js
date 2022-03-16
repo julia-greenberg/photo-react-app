@@ -20,7 +20,7 @@ class Stories extends React.Component {
     }
 
     fetchStories () {
-        fetch('/api/stories', {
+        fetch('https://julias-photo-app.herokuapp.com/api/stories', {
             // authentication headers added using 
             // getHeaders() function from src/utils.js
             headers: getHeaders()
