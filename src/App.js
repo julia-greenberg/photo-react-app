@@ -23,7 +23,7 @@ class App extends React.Component {
     }
 
     fetchUser () {
-        fetch('/api/profile', {
+        fetch('https://julias-photo-app.herokuapp.com/api/profile', {
             // authentication headers added using 
             // getHeaders() function from src/utils.js
             headers: getHeaders()
