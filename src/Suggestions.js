@@ -20,7 +20,7 @@ class Suggestions extends React.Component {
     }
 
     fetchSuggestions() {
-        fetch('/api/suggestions/', {
+        fetch('https://julias-photo-app.herokuapp.com/api/suggestions/', {
             // authentication headers added using 
             // getHeaders() function from src/utils.js
             headers: getHeaders()
