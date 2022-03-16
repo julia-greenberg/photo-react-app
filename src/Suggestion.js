@@ -29,7 +29,7 @@ class Suggestion extends React.Component {
     follow() {
         // issue fetch request and then afterwards requery for the post:
         // this.props.requeryPost();
-        fetch(`/api/following/`, {
+        fetch(`https://julias-photo-app.herokuapp.com/api/following/`, {
             headers: getHeaders(),
             method: "POST",
             body: JSON.stringify({user_id: this.state.suggestion.id})
@@ -47,7 +47,7 @@ class Suggestion extends React.Component {
 
     unfollow(followingId) {
 
-        fetch(`/api/following/${followingId}`, {
+        fetch(`https://julias-photo-app.herokuapp.com/api/following/${followingId}`, {
             headers: getHeaders(),
             method: "DELETE"
         })
